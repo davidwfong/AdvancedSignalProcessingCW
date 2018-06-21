@@ -1,0 +1,12 @@
+subplot(2,2,1)
+pdf(rp3(1,100))
+subplot(2,2,2)
+pdf(rp3(1,1000))
+subplot(2,2,3)
+pdf(rp3(1,10000))
+subplot(2,2,4)
+X = -3:0.01:3;
+plot(X,unifpdf(X,-1,2))
+ylim([0 0.5])
+title('Theoretical pdf')
+xlabel('sample')
